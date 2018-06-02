@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{%block body %}
+<div class="jumbotron text-center">
+    <h1>Welcome To E-VOTING System</h1>
+    <p class="lead">This application uses blockchain to cast your vote and thus there will be no doubt for whom you have voted</p>
+    {%if session.logged_in==NULL%}
+    <a href="/register" class="btn btn-primary btn-lg">REGISTER</a>
+    <a href="/login" class="btn btn-primary btn-lg">LOGIN</a>
+    {%endif%}
+
+</div>
+{%endblock%}
